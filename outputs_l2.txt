@@ -1,0 +1,98 @@
+Train chunks: 15636 | Test chunks: 3910
+
+=== L2 MODEL: EVALUATION ===
+Confusion matrix (rows = true NEG/CORE, cols = predicted NEG/CORE):
+[[1908   77]
+ [ 155 1770]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+     NEG (0)      0.925     0.961     0.943      1985
+    CORE (1)      0.958     0.919     0.938      1925
+
+    accuracy                          0.941      3910
+   macro avg      0.942     0.940     0.941      3910
+weighted avg      0.941     0.941     0.941      3910
+
+ROC AUC: 0.987
+
+Non-zero coefficients: 16228 of 16228 (100.0%)
+
+Top 15 positive-weight words (predict CORE = 1):
+  trade                  27.595
+  merchants              22.290
+  merchant               17.653
+  marchants              13.436
+  marchant                8.878
+  factor                  5.455
+  staple                  4.946
+  commodities             4.160
+  buy                     3.115
+  chapman                 3.100
+  exchange                2.974
+  london                  2.859
+  goods                   2.857
+  ships                   2.739
+  ship                    2.615
+
+Top 15 negative-weight words (predict NEG = 0):
+  god                    -3.170
+  christ                 -1.911
+  rome                   -1.750
+  enemies                -1.730
+  power                  -1.720
+  pope                   -1.713
+  doctrine               -1.647
+  forces                 -1.569
+  gods                   -1.563
+  spirit                 -1.528
+  faith                  -1.479
+  death                  -1.438
+  armie                  -1.407
+  king                   -1.385
+  that                   -1.329
+
+False positives: 77 | False negatives: 155
+
+--- FALSE POSITIVES (label NEG, predicted CORE) ---
+
+[test #10] P(core) = 0.69
+There they crosse the way, and goe downe the West side onely of Wa∣ter-lane, and then walke along Thames-street, leaving the Custome house, pas∣sing on to Smarts-key; whence returning backe into the Crosse-lane, so farre as Sir Cuthbert Buckles house, now in the custody of Sir Iohn Lemnian, Knight, and Lord Maior of London, they goe home to the place where they began. Here I was favoured by Master Iohn Childerlay, Doctor of Divinity, my wor∣thy good friend, and his diligent Offi∣cers.
+
+[test #30] P(core) = 0.62
+nor the King prepare a market for you, you shall doe well to consider, whether is better, to haue Tissaphernes your guide, who euery where seekes to entrap you, or to take guides of your owne choice, who if at any time they proue false, offend against their owne soules and bodies. As for prouision, whether is it better to buy a poore pittance for much mony (which now, being out of pay, will grow scant amongst vs) out of a market, which they shall furnish, or hauing the victory, to vse what measure euery man thinketh fittest for his owne turne.
+
+[test #37] P(core) = 0.63
+An abuse in our Common-wealth necessarily to be reformed; And, as a person that hath both seene, and felt by experience these inconveniences, I wish it to be remedied; For, I can but wonder, that the late Lord high Admirall of England; the late Earle of Cumberland* and the Lord Thomas Howard, now Earle of Suffolke, being of so great authoritie, having to their costs and losse so often made experience of the inconveniences of these lewd proceedings, haue not vnited their Goodnesses and Wisedomes, to redresse this dis-loyall and base absurditie of the Vulgar. Master Thomas Candish in his last Vo
+
+[test #53] P(core) = 0.78
+Very rich it is also underground; as in Salt-pits, Stone-quarries (whereof some be pretious) and mines both of Gold and Silver, Iron, Quick-silver, and other metals: So that nothing is wan∣ting for the life of man, either for nutriment or ornament; and (that which is part of a wonder also) though there be no where more store of money, yet be there no where mea∣ner prizes for their commodities.
+
+[test #137] P(core) = 0.53
+The islands of Guernsey
+      and Jersey, without any means of resisting the authority of parliament,
+      are more lightly taxed than any part of Great Britain. Parliament, in
+      attempting to exercise its supposed right, whether well or ill grounded,
+      of taxing the colonies, has never hitherto demanded of them anything which
+      even approached to a just proportion to what was paid by their fellow
+      subjects at home. If the contribution of the colonies, besides, was to
+      rise or fall in proportion to the rise or fall of the land-tax, parliament
+      could not tax them wit
+
+--- FALSE NEGATIVES (label CORE, predicted NEG) ---
+
+[test #20] P(core) = 0.26
+But since that they haue made a trade of the breach of faith, they haue also made a conscience to put hostages to death: as Nar∣ses, who pardoned the hostages of the Luquoies, hauing broken their faith: and Charles duke of Bourgongne had no sooner set three hundred hostages of the Leegeois at li∣bertie (the which he might iustly haue put to death, whatsoeuer Comines saith) but they attempted a new warre against him. The clause that hostages should be subiect vnto capitall punishments, was vnknowne to the auntients, for it was alwayes lawfull not only to kill hostages that fled, but also if the
+
+[test #38] P(core) = 0.36
+Indeede it is true, both the Natives and English understand so much of one anothers lan∣guage, as may enable them to trade one with an∣other, and fit them for conference about things that are subject to outward sense; and so they understand our use in keeping the Sabbath day, observe our reverence in the worship of God, are somewhat acquainted with the morall precepts; know that adultery, theft, murther and lying are forbidden, which nature teacheth, because these things are outward, and may bee under∣stood almost by sense: But how shall a man ex∣presse unto them things meerely spirituall, whi
+
+[test #55] P(core) = 0.29
+morrow morning when the Sun 'gan peepe, wak'd and rub'd mine eyes, and shak'd off sleepe, d vnderstanding that the Riuer went, om Boston vp to Lincolne, and to Trent, mber, Owse Yorke, and (taking paine) e need not come in sight of Sea againe, ik'd the motion, and made haste away Lincolne, which was 50.mile, that Day: ich City in the 3.King Edwards Raigne, s th' onely staple, for this Kingdomes gaine or, Leather, Lead, and Wooll, and then was seene ue times ten Churches there, but now Fifteene: bra e Cathedrall Church there now doth stand, hat searcely hath a fellow in this Land: Tis for a God
+
+[test #91] P(core) = 0.35
+E. Certainly, the GREEKES, with whom hath bin the vniuersall Staple of antiquities (for, as for the LATINS (who but as it were a while since came to be learned) they haue not much, and the SYRIAN, CALDEAN, and more profoundly learned AEGYP∣TIAN (as the people, among whom the HEBREVVS, Gods owne Scholers, dwelt) haue little obuious) do heere, and there, make famous commemoration of Shields, and Crests. A. They do. But those deuises were, for the more part, arbitrary, not armorially formall.
+
+[test #127] P(core) = 0.44
+At these wordes Theodosius began to speake, and say to Vincent: Behold the whole interpretation, but he permitted the Merchant to conclude, who sayd: Well Maisters, I will esteeme you happy, that you haue directed the wayes of your Pilgrimage better then I haue done, I entreat you, by your holy prayers, to obtaine for me, that I may walke hereafter so happily, and so hastily performe the rest of my way in this mortall life, that God may be glorified, and the repose of my soule assured, vnder the shadow of his mercy.

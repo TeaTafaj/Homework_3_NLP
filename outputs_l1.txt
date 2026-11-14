@@ -1,0 +1,145 @@
+Train chunks: 15636 | Test chunks: 3910
+
+=== L1 MODEL: EVALUATION ===
+Confusion matrix (rows = true NEG/CORE, cols = predicted NEG/CORE):
+[[1985    0]
+ [   8 1917]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+     NEG (0)      0.996     1.000     0.998      1985
+    CORE (1)      1.000     0.996     0.998      1925
+
+    accuracy                          0.998      3910
+   macro avg      0.998     0.998     0.998      3910
+weighted avg      0.998     0.998     0.998      3910
+
+ROC AUC: 0.999
+
+Non-zero coefficients: 30 of 16228 (0.2%)
+
+Top 15 positive-weight words (predict CORE = 1):
+  trade                 175.786
+  merchants             148.144
+  merchant              124.698
+  marchants              90.488
+  marchant               66.879
+  factor                 57.658
+  staple                 57.619
+  adventurers            41.485
+  chapman                36.245
+  adventurer             30.985
+  purser                 26.746
+  venturers               8.357
+  ship                    2.415
+  pounds                  1.632
+  have                    1.461
+
+Top 15 negative-weight words (predict NEG = 0):
+  god                    -2.734
+  that                   -2.490
+  it                     -0.978
+  christ                 -0.463
+  not                    -0.387
+  his                    -0.070
+
+False positives: 0 | False negatives: 8
+
+--- FALSE POSITIVES (label NEG, predicted CORE) ---
+
+--- FALSE NEGATIVES (label CORE, predicted NEG) ---
+
+[test #521] P(core) = 0.42
+Boord and boord, or thwart the hawse; we are foule on each other: The ships on fire; Cut any thing to get cleere, and smother the fire with wet clothes, We are cleere, and the fire is out, God be thanked. The day is spent, let vs consult. Surgion looke to the wounded, wind vp the slaine, with each a waight or bullet at his head and feete, giue three peeces for their fune∣rals. Swabber make cleane the shippe. Purser record their names; Watch bee vigilant to keepe your berth to wind∣ward: and that wee loose him not in the night. Gunners spunge your Or∣dinances; Souldiers skower your pee∣ces; Car
+
+[test #738] P(core) = 0.02
+Cornelius Domitianus is said to have dwelt in Velabrum. Aequimelium is betweene Velabrum and the Capitoll, neere to the staplers wooll shops. The name arose hereupon, for that Sp. Melius a Romane cittizen who aspired to bee king, sometime there dwelt: who being detected of that crime, was killed, his goods confiscate, and his house laid levell with the ground, and the plot where it stood, by the Romanes was made a void yard. The temple of Murtiae, goddesse of Idlenesse, was under the Aventine, upon the ascent of the hill called Clivus Publicus, in that part whereas folke goe up to the church o
+
+[test #1257] P(core) = 0.43
+A particular of such necessary provisions as every Adventurer must carry, according to the number of his servants: together with an estimate of their prices. In Victualls. For one man, for a yeere,
+
+
+
+
+ 
+l.
+s
+d
+
+
+Imprimis, eight bushells of meale
+2
+8
+0
+
+
+Item, two bushellls of Oatmeale
+0
+9
+0
+
+
+Item, one bushell of Pease
+0
+4
+0
+
+
+Item, one gallon of Oyle
+0
+3
+6
+
+
+Item, two gallons of Vinegar
+0
+2
+0
+
+
+Item, one gallon of Aquavitae
+0
+2
+6
+
+
+Item, one bushell of Bay-salt
+0
+2
+0
+
+
+Item, in Sugar, Spice and Fruit
+0
+6
+8
+
+
+
+Summ. 3
+17
+8
+
+
+
+
+
+In Apparrell.
+
+[test #1281] P(core) = 0.11
+First, they goe with lesse charge then others both for men and victualls. Their ships requiring fewer per∣sons to man them, and their men lesse victuall and courser to keepe them, then ours. Besides, many of them are venturers, and so sharers in the gaine: And therefore wilbe content to liue vvith little, to indure all difficulties, to vvorke out all hazards with pati∣ence, and bee good husbands for the generall, whilst they know the profit redounds to their particulars. 2.
+
+[test #1363] P(core) = 0.31
+good my lord remember the poor widow mite for sure if I can do more in this service or otherwise it shall not be omit from Middleborough this first of August 1600. your lordship most dutiful servant JOHN Davis a brief relation of master JOHN Davis chief pilot to the zelander in their East-India voyage depart from Middleborough the fifteen of march 1598. the fifteen hereof we depart from Flushing with two ship in consort the lion and lioness the lion be four hundred tun have in she a hundred three and twenty person the lioness two hundred and fifty tun have a hundred person mushroom clerk and m
+
+[test #3160] P(core) = 0.06
+If it be the absence of their children that troubles them so much,Absence of children cannot in reason trouble them. that they enioy not ^he companie of them, whom they loue so deerly, first this is too effeminate and too womanish a kind of loue, not to be able to endure their absence, when it is so beneficial vnto them. Secondly, how manie be ^^ ere, that vpon diuers occasions neuer see their children in manie yeares, either because they are marc^ant-venturers, or serue some where in the wa^^es, or beare office in the Common-wea^^h* and their parents are content they should be from th^m, pref
+
+[test #3169] P(core) = 0.02
+The greene L very, that Embleme of frailtie, which h e wore living, must now bee the Carp t t cover him dying. Out of all hi spacious raunge, he ha's rese ved so much ground a may afford him a Grave. More hee n edes not, and to bee debarr d t is, even in humanity he can ot. What rests then, but that hee rest after his long Walke? While a fixe his owne Epitaph upon his owne naked monume t, to make his memory more perp tuate; Defessus sum ambulando. Pitty were it then to disquiet him. 7. A Gamester IS a Merch t-venturer, for his stocke ru nes alwaies upon ha∣zard.
+
+[test #3463] P(core) = 0.21
+Calais in Picardy
+111 ll Ordinary weight.92 ll Merchants weight.114 ll The English wooll weight. Genua
+102 ll Weight for Spices.85 ll By the great weight. Carga, or Charge, is 270 ll small weight. Marsellis.--111 ll. Saint Antoine.--127 ll. Aquismort. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. Mirabel. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. Calsada. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. Offerte. 102 ll. And all France generally 111 ll. L

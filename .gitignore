@@ -1,0 +1,4 @@
+.venv/
+data/
+Train_Test_Documents/
+.DS_Store
